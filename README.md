@@ -46,24 +46,24 @@ just for clarification, here is an example matrix:
 
 1 1 1 1 1 1 1 0
 
-1 0 0 0 0 1 0 1
+1  0  0  0  0  1  0  1
 
-1 0 1 1 0 0 0 1
+1  0  1  1  0  0  0  1
 
-1 1 1 0 0 1 1 1
+1  1  1  0  0  1  1  1
 
-1 1 0 0 0 1 0 0
+1  1  0  0  0  1  0  0
 
-0 1 1 1 1 1 1 0
+0  1  1  1  1  1  1  0
 
-1 0 0 0 1 0 0 1 
+1  0  0  0  1  0  0  1 
  
 A small n = 2 value was chosen here for simplicity. Notice that since n = 2, the cluster size is also
 automatically defined to be of size 2. Also notice that the matrix length was given by = 2^(n+1) = 
 2^(2+1) = 8. And finally, here is all the relevant estimation data contained within:
 
 Total # of 1’s hits in rows = 5
-total # of 1’s hits in columns = 7
+Total # of 1’s hits in columns = 7 
 Total # of 0’s hits in rows = 6
 Total # of 0’s hits in columns = 5
 Total#of hits = 5+ 7 + 6 + 5 = 23
