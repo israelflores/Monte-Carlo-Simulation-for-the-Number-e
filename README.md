@@ -43,12 +43,19 @@ estimation for e will always be 2^(n+3)/(2^(n+3) – totalNumberOfHits). That co
 just for clarification, here is an example matrix: 
 
 1 0 0 0 0 0 1 0
+
 1 1 1 1 1 1 1 0
+
 1 0 0 0 0 1 0 1
+
 1 0 1 1 0 0 0 1
+
 1 1 1 0 0 1 1 1
+
 1 1 0 0 0 1 0 0
+
 0 1 1 1 1 1 1 0
+
 1 0 0 0 1 0 0 1 
  
 A small n = 2 value was chosen here for simplicity. Notice that since n = 2, the cluster size is also
