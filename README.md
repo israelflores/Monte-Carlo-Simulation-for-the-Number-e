@@ -42,29 +42,27 @@ t/(t – h), where h is the current number of hits and t is the current number o
 estimation for e will always be 2^(n+3)/(2^(n+3) – totalNumberOfHits). That concludes the algorithm, but
 just for clarification, here is an example matrix: 
 
-[[1 0 0 0 0 0 1 0]
- [1 1 1 1 1 1 1 0]
- [1 0 0 0 0 1 0 1]
- [1 0 1 1 0 0 0 1]
- [1 1 1 0 0 1 1 1]
- [1 1 0 0 0 1 0 0]
- [0 1 1 1 1 1 1 0]
- [1 0 0 0 1 0 0 1]] 
+1 0 0 0 0 0 1 0
+1 1 1 1 1 1 1 0
+1 0 0 0 0 1 0 1
+1 0 1 1 0 0 0 1
+1 1 1 0 0 1 1 1
+1 1 0 0 0 1 0 0
+0 1 1 1 1 1 1 0
+1 0 0 0 1 0 0 1 
  
 A small n = 2 value was chosen here for simplicity. Notice that since n = 2, the cluster size is also
 automatically defined to be of size 2. Also notice that the matrix length was given by = 2^(n+1) = 
 2^(2+1) = 8. And finally, here is all the relevant estimation data contained within:
 
 Total # of 1’s hits in rows = 5
-Total # of 1’s hits in columns = 7
+total # of 1’s hits in columns = 7
 Total # of 0’s hits in rows = 6
 Total # of 0’s hits in columns = 5
-Total # of hits = 5+ 7 + 6 + 5 = 23
+Total#of hits = 5+ 7 + 6 + 5 = 23
 Total # of trials = 2^(n+3) =2^(2+3) = 32
-Final estimation of e = 32/(32 - 23) = 3.555…
 
-In this case the outcome was obviously not a good estimation for e, and is an example of why choosing larger
-integer values for n is important. (The limit of the ratio t/(t – h) approaches e as n approaches infinity.)
+Final estimation of e = 32/(32 - 23) = 3.555…In this case the outcome was obviously not a good estimation for e, and is an example of why choosing largerinteger values for n is important. (The limit of the ratio t/(t – h) approaches e as n approaches infinity.)
 
 Good outcomes are also dependent upon the coin being a “fair” coin (i.e. producing true heads/tails randomness).
 And notice since a good estimation for e is dependent upon true randomness, we can use a tweaked version of this
